@@ -1,0 +1,22 @@
+{
+  "name": "hotel-management-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:address": "dotenv --env-file=../.env -- node ./addressService/index.js",
+    "start:booking": "dotenv --env-file=../.env  -- node ./bookingService/index.js",
+    "start:chat": "dotenv --env-file=../.env  -- node ./chatService/index.js",
+    "start:feedback": "dotenv --env-file=../.env  -- node ./feedbackService/index.js",
+    "start:notification": "dotenv --env-file=../.env  -- node ./notificationService/index.js",
+    "start:payment": "dotenv --env-file=../.env  -- node ./paymentService/index.js",
+    "start:room": "dotenv --env-file=../.env  -- node ./roomService/index.js",
+    "start:user": "dotenv --env-file=../.env  -- node ./userService/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "cors": "^2.8.5"
+  }
+}
