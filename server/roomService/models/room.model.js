@@ -1,3 +1,5 @@
+import mongoose from 'mongoose';
+
 const roomSchema = new mongoose.Schema({
     roomNumber: { type: String, required: true },
     floor: { type: String },
@@ -14,4 +16,4 @@ const roomSchema = new mongoose.Schema({
 roomSchema.index({ roomNumber: 1, hotel: 1 }, { unique: true });
 
 const Room = mongoose.model('Room', roomSchema);
-module.exports = Room;
+export default Room;

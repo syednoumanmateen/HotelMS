@@ -4,5 +4,5 @@ import healthRoute from './routes/health.route';
 
 app.use('/', healthRoute);
 
-const PORT = process.env.PORT_USER || 3003;
+const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => console.log(`chatService running on port ${PORT}`));

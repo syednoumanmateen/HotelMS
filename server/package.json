@@ -4,14 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start:address": "dotenv --env-file=../.env -- node ./addressService/index.js",
-    "start:booking": "dotenv --env-file=../.env  -- node ./bookingService/index.js",
-    "start:chat": "dotenv --env-file=../.env  -- node ./chatService/index.js",
-    "start:feedback": "dotenv --env-file=../.env  -- node ./feedbackService/index.js",
-    "start:notification": "dotenv --env-file=../.env  -- node ./notificationService/index.js",
-    "start:payment": "dotenv --env-file=../.env  -- node ./paymentService/index.js",
-    "start:room": "dotenv --env-file=../.env  -- node ./roomService/index.js",
-    "start:user": "dotenv --env-file=../.env  -- node ./userService/index.js"
+    "start:address": "node --env-file=.env ./addressService/index.js",
+    "start:booking": "node --env-file=.env ./bookingService/index.js",
+    "start:chat": "node --env-file=.env ./chatService/index.js",
+    "start:feedback": "node --env-file=.env ./feedbackService/index.js",
+    "start:notification": "node --env-file=.env ./notificationService/index.js",
+    "start:payment": "node --env-file=.env ./paymentService/index.js",
+    "start:room": "node --env-file=.env ./roomService/index.js",
+    "start:user": "node --env-file=.env ./userService/index.js",
+    "start:health-aggregator": "node --env-file=.env ./healthAggregatorService/index.js"
   },
   "dependencies": {
     "express": "^4.18.2",
